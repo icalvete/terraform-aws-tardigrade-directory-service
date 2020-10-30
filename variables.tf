@@ -1,3 +1,9 @@
+variable "create" {
+  description = "Controls if Directory Service should be created (it affects almost all resources)"
+  type        = bool
+  default     = true
+}
+
 variable name {
   description = "The fully qualified name for the directory, such as corp.example.com"
   type        = string

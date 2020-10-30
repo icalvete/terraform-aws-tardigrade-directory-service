@@ -20,6 +20,7 @@ Terraform module to create a directory
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| create | Controls if VPC should be created | `bool` | `true` | no |
 | name | The fully qualified name for the directory, such as corp.example.com | `string` | n/a | yes |
 | password | The password for the directory administrator or connector user | `string` | n/a | yes |
 | subnet\_ids | The identifiers of the subnets for the directory servers (2 subnets in 2 different AZs) | `list(string)` | n/a | yes |
